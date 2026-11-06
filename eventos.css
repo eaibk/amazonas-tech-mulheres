@@ -1,0 +1,35 @@
+/* Estilos da página: eventos */
+.events-page .gold-page-hero {padding-top:40px;padding-bottom:35px}
+.event-content {padding:30px 6.5% 55px}
+.event-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.event-card {background:white;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.event-date {background:#829d70;color:white;padding:20px;min-height:110px;position:relative}
+.event-date b {font-family:"Playfair Display";font-size:43px;display:block}
+.event-date small {font-size:10px;font-weight:700}
+.event-date span {position:absolute;right:25px;top:30px;font-size:30px;color:#4f6c48}
+.event-details {padding:22px;display:flex;flex-direction:column;flex:1}
+.event-details h2 {font-size:21px;min-height:55px;margin:18px 0 12px;line-height:1.2}
+.event-details p {font-size:12px;color:var(--muted);line-height:1.55;margin:7px 0}
+.event-details .btn {margin-top:auto}
+.pill-sage {background:#eef3e8;color:#617a50}
+.pill-gold {background:#f8efd9;color:#8a5b12}
+.confirmation {margin-bottom:25px;background:#805c18;color:#fff}
+@media (max-width:1050px) {.event-grid {grid-template-columns:repeat(2,minmax(0,1fr))}.event-content {padding-left:4%;padding-right:4%}}
+@media (max-width:680px) {.event-grid {grid-template-columns:1fr}.event-content {padding:22px 5% 38px}.event-details {padding:20px}.event-details h2 {min-height:auto}.event-date {min-height:95px}.events-page .gold-page-hero h1 {font-size:clamp(34px,9vw,48px)}}
+
+.event-card .event-date{margin-top:0}
+
+.community-card img.image-fallback{object-fit:contain;background:#e9edda url("../assets/folhas.svg") center/cover no-repeat;min-height:150px}
+
+.events-source-note {margin:0 0 22px;color:var(--muted);font-size:12px;line-height:1.6}
+.event-card {min-width:0}
+.event-details {gap:2px}
+.event-details h2 {min-height:0;overflow-wrap:anywhere}
+.event-details .btn {margin-top:18px;text-align:center}
+@media (max-width:680px) {
+ .event-content {padding-left:5%;padding-right:5%}
+ .event-card {border-radius:16px}
+ .event-date {padding:16px 20px}
+ .event-details {padding:20px}
+ .event-details p {font-size:13px}
+}

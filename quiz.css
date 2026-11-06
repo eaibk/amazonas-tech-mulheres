@@ -1,0 +1,46 @@
+/* Estilos da página: quiz */
+.quiz-intro {padding:58px 6.5% 70px;min-height:calc(100vh - 218px);background:radial-gradient(ellipse at 10% 40%,#dce8d2 0,transparent 26%),var(--cream)}
+
+.quiz-intro-grid {display:grid;grid-template-columns:1.55fr .9fr;gap:9%;align-items:center;margin-top:65px}
+
+.quiz-intro h1 {font-size:clamp(35px,4vw,50px);line-height:1.2;font-weight:400;margin:32px 0 22px}
+
+.quiz-intro h1 strong {font-size:1.1em}
+
+.quiz-intro-grid>div>p {font-size:16px;line-height:1.6;color:var(--muted);max-width:750px}
+
+.area-samples {display:grid;gap:8px;margin-top:25px}
+
+.area-samples div {padding:13px 14px;border-radius:11px;background:var(--gold-dark);color:white}
+
+.area-samples div:nth-child(2) {background:#806b48}
+
+.area-samples div:nth-child(3) {background:#087453}
+
+.area-samples b {font-size:15px}
+
+.area-samples p {font-size:13px;margin:5px 0 0}
+
+.login-prompt {background:var(--pale);border:1px solid var(--line);border-radius:28px;padding:35px;box-shadow:var(--shadow)}
+
+.login-prompt h2 {font-size:27px;margin:25px 0 12px}
+
+.login-prompt p {color:var(--muted);line-height:1.6}
+
+@media (max-width:1000px) {
+.quiz-intro-grid {gap:4%}
+}
+
+@media (max-width:720px) {
+.quiz-intro {padding:35px 6%}
+.quiz-intro-grid {grid-template-columns:1fr;margin-top:35px}
+.quiz-intro h1 {font-size:36px}
+.login-prompt {padding:25px;margin-top:15px}
+}
+
+/* Estado exibido quando a pessoa já está autenticada. */
+.login-prompt.quiz-ready {background:transparent;border:0;box-shadow:none;padding:0 10px;}
+.login-prompt.quiz-ready .key-icon {display:grid;place-items:center;width:64px;height:64px;border-radius:22px;background:#f8efd8;color:var(--gold-dark);font-size:30px;font-weight:700;}
+.login-prompt.quiz-ready h2 {margin:22px 0 12px;color:var(--green);}
+.login-prompt.quiz-ready p {max-width:430px;}
+.quiz-start-button {min-height:54px;margin-top:22px;font-size:15px;}

@@ -1,0 +1,70 @@
+AMAZONAS TECH MULHERES
+=====================
+
+COMO ABRIR NO VS CODE
+1. Extraia o arquivo ZIP.
+2. Abra a pasta "amazonas-tech-mulheres" no Visual Studio Code.
+3. Instale a extensão Live Server (opcional, mas recomendada).
+4. Clique com o botão direito em index.html e escolha "Open with Live Server".
+
+TELAS
+- index.html: início
+- quiz.html: apresentação do quiz
+- pergunta.html: fluxo com 25 perguntas
+- resultado.html: resultado vocacional calculado
+- mulheres.html: mulheres que inspiram
+- comunidades.html: busca e filtros de comunidades
+- eventos.html: eventos e inscrição demonstrativa
+- login.html: entrar
+- cadastro.html: criar conta
+
+FUNCIONALIDADES
+- Cadastro e login demonstrativos usando localStorage do navegador.
+- Acesso ao quiz protegido por login.
+- 25 perguntas de perfil, sem respostas certas ou erradas.
+- Pontuação por afinidade entre 7 áreas da tecnologia.
+- Busca e filtros na página de comunidades.
+- Links externos para inscrição nos eventos oficiais, liberados após login.
+- Links para os canais oficiais de quatro comunidades reais de tecnologia de Manaus.
+
+IMPORTANTE
+Este é um protótipo front-end. Os dados de cadastro e senha ficam apenas no navegador
+(localStorage), sem criptografia ou servidor. Não use senhas reais neste protótipo.
+Para publicar com usuários reais, será necessário backend, banco de dados,
+autenticação segura e integração de eventos. Os eventos e comunidades desta versão foram substituídos por iniciativas reais com links para páginas oficiais. Datas, vagas e condições podem mudar; confirme no site de cada organização.
+As imagens recortadas das referências servem como ilustração e devem ser substituídas
+por fotografias autorizadas e verificadas antes da publicação.
+\n\nFLUXO DE LOGIN E QUIZ\nAo acessar o quiz sem estar autenticada, entre ou crie uma conta. Após login/cadastro, o sistema direciona automaticamente para pergunta.html (Pergunta 1 de 25). Usuárias já autenticadas que abrirem quiz.html também seguem diretamente para as perguntas.\n
+
+ATUALIZAÇÕES DESTA VERSÃO
+- Quando a conta está conectada, o cabeçalho oculta os links Entrar/Cadastrar-se e mostra somente o nome da usuária com opção de sair.
+- Botões de login/cadastro nas páginas passam a apontar para áreas úteis do site quando a usuária já está conectada.
+- A página Mulheres que Inspiram agora reúne 10 trajetórias, incluindo profissionais e pioneiras internacionais. Os novos blocos usam iniciais em vez de fotografias sem licença; cada biografia possui link para uma fonte institucional.
+- A página Eventos apresenta MVP Conf Regional Manaus (12/11/2026), Intelligence of Things Week 2026 (25/11/2026) e Amazon IA Summit 2026 (02/12/2026), com links oficiais.
+- Os botões de participação em eventos e comunidades exigem login e depois abrem os destinos oficiais; o site não registra inscrições externas.
+- As páginas Mulheres que Inspiram, Eventos, Comunidades e Resultado receberam ajustes de responsividade para desktop, tablet e celular. A ilustração de mulheres na página inicial agora ocupa uma área própria no celular.
+- O resultado do quiz inclui uma explicação resumida das sete áreas profissionais avaliadas.
+
+
+ATUALIZAÇÕES DE IMAGENS E COMUNIDADES
+- A página Comunidades apresenta Manas Tech, PHP Manaus, GDG Manaus e DevOps Manaus, com links para os respectivos canais oficiais. A entrada é feita diretamente nos sites ou plataformas de cada grupo.
+- A página inicial usa uma ilustração de mulheres diversas em assets/hero-mulheres.png e folhas decorativas em assets/folhas.svg.
+- A logo do cabeçalho usa assets/logo.png.
+- Os cartões de eventos e comunidades usam imagens ilustrativas externas com links para as fontes. Elas não representam registros dos eventos reais do projeto.
+- Os retratos de Mulheres que Inspiram usam imagens públicas com links de crédito; se alguma imagem externa sair do ar, o site mostra as iniciais como alternativa.
+
+COMO COLOCAR SUAS PRÓPRIAS FOTOS
+1. Coloque os arquivos .jpg, .jpeg ou .png dentro da pasta assets. Prefira nomes simples, sem espaços ou acentos, por exemplo: evento-tech-connect.jpg.
+2. No HTML, encontre a imagem que deseja trocar e altere o valor de src. Exemplo: <img src="assets/evento-tech-connect.jpg" alt="Mulheres participando de um encontro de tecnologia">.
+3. Para trocar a logo, substitua o arquivo assets/logo.png mantendo esse nome, ou altere o caminho do src no cabeçalho de todas as páginas.
+4. Para trocar as fotos das mulheres, edite o src das imagens em mulheres.html. Use retratos autorizados e mantenha o crédito da fotógrafa ou da fonte.
+5. Para trocar as imagens dos eventos, edite os src com a classe event-photo em eventos.html.
+6. Atualize a página com Ctrl + F5 para limpar o cache do navegador.
+
+Dica: para fotos de perfil, use imagens quadradas; para eventos, prefira imagens horizontais. Se você me enviar as fotos que deseja usar, posso recortá-las e organizá-las na pasta assets sem alterar o restante do site.
+
+
+AJUSTES DE IDENTIDADE VISUAL (NOV/2026)
+- Símbolo da marca substituído pela imagem enviada, mantendo "Amazonas Tech Mulheres" como texto HTML no cabeçalho.
+- Imagens dos cartões de eventos removidas; os cartões começam pela data e mantêm as informações textuais.
+- As comunidades demonstrativas foram substituídas por quatro grupos reais de Manaus e região, com links oficiais de participação.

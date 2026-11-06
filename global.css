@@ -1,0 +1,147 @@
+/* Estilos compartilhados */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap");
+
+:root {--cream:#f8f8f1;--green:#173f35;--green2:#3d6859;--sage:#819b70;--pale:#e9edda;--gold:#c99b42;--gold-dark:#bd841d;--text:#24483e;--muted:#697a70;--line:#dce2d4;--white:#fff;--shadow:0 3px 4px #172e261f,0 2px 2px #172e2614}
+
+* {box-sizing:border-box}
+
+html {scroll-behavior:smooth}
+
+body {margin:0;background:var(--cream);color:var(--text);font-family:"DM Sans",Arial,sans-serif;font-size:15px}
+
+a {color:inherit;text-decoration:none}
+
+button,
+input {font:inherit}
+
+.site-header {height:98px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 5.2%;gap:25px;position:relative;z-index:5}
+
+.brand {display:flex;align-items:center;gap:10px;min-width:190px;max-width:230px;color:var(--green);flex:none}
+
+.brand img {display:block;width:58px;height:58px;flex:none;object-fit:contain}
+
+.brand-name {font-family:"DM Sans",Arial,sans-serif;font-size:17px;line-height:1.05;font-weight:800;letter-spacing:-.04em;color:var(--green);white-space:nowrap}
+.brand-name small {display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin-top:5px;color:var(--green2)}
+
+.main-nav {display:flex;align-items:center;gap:26px}
+
+.main-nav a {font-size:13px;color:#56675e;padding:12px 0;white-space:nowrap}
+
+.main-nav a.active {font-weight:700;color:var(--green);border-bottom:2px solid var(--green)}
+
+.header-actions {display:flex;align-items:center;gap:22px;white-space:nowrap}
+
+.login-link {font-weight:600;font-size:13px}
+
+.btn {border:0;border-radius:12px;padding:13px 20px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;font-size:13px;cursor:pointer;transition:.2s}
+
+.btn:hover {transform:translateY(-1px);filter:brightness(.98)}
+
+.btn-dark {background:var(--green);color:white}
+
+.btn-gold {background:var(--gold);color:#fff}
+
+.btn-outline {background:#fff;color:var(--green);border:1px solid var(--line)}
+
+.btn-sage {background:#819b70;color:#102c23}
+
+.btn-block {width:100%;margin-top:12px}
+
+.user-menu {border:0;background:var(--pale);color:var(--green);padding:12px 18px;border-radius:30px;font-weight:700;cursor:pointer;white-space:nowrap}
+.site-header.is-authenticated .header-actions > .auth-link {display:none}
+.site-header.is-authenticated .header-actions {margin-left:auto}
+.user-menu:hover {background:#dfe7d1}
+
+.mobile-toggle {display:none;background:none;border:0;font-size:25px;color:var(--green)}
+
+.eyebrow {font-size:11px;font-weight:700;color:#637b50;letter-spacing:.02em}
+
+.site-footer {min-height:120px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:25px 7%;color:var(--muted);font-size:12px}
+
+.site-footer b {font-size:14px;color:var(--green)}
+
+.site-footer p {margin:8px 0 0}
+
+.site-footer>span {color:#637c50}
+
+h1 strong,
+h2 strong {font-family:"Playfair Display",serif;font-weight:800}
+
+.hero-buttons {display:flex;gap:12px;margin-top:24px}
+
+.soft-note {display:block;margin-top:18px;color:#778374;font-size:11px}
+
+.person-card {background:#fff;border-radius:15px;overflow:hidden;box-shadow:var(--shadow)}
+
+.person-top {height:145px;background:#476b56;display:flex;justify-content:center;align-items:center}
+
+.person-top img {width:112px;height:112px;object-fit:cover;border-radius:50%;border:3px solid #fff}
+
+.person-body {padding:20px}
+
+.person-body>small {font-size:10px;color:#667d54}
+
+.person-body h3 {font-family:"Playfair Display",serif;font-size:23px;margin:8px 0;color:var(--green)}
+
+.person-body p {font-size:12px;line-height:1.55;color:var(--muted);margin:7px 0}
+
+.tag-box {background:#eef2e8;border-radius:10px;padding:12px;margin-top:18px;font-size:10px;color:var(--green)}
+
+.tag-box p {margin-bottom:0;color:var(--text)}
+
+.pill {display:inline-block;border-radius:30px;background:#dfe8d7;padding:9px 14px;font-size:12px;font-weight:700;color:#637b50}
+
+.notice {background:#f8efd8;color:#8a5b12;border-radius:12px;padding:16px;font-size:12px;line-height:1.5;margin-top:20px}
+
+.progress-track {grid-column:1/-1;height:6px;border-radius:10px;background:#dce2d4;overflow:hidden}
+
+.progress-track span {display:block;height:100%;width:4%;background:var(--gold);border-radius:10px;transition:width .2s}
+
+.answer-list {display:grid;gap:12px}
+
+.answer-option {width:100%;border:1px solid var(--line);background:#fff;border-radius:13px;padding:17px 16px;display:flex;align-items:center;gap:15px;text-align:left;color:var(--text);cursor:pointer;min-height:62px}
+
+.answer-option:before {content:"";width:20px;height:20px;border:2px solid #91a294;border-radius:50%;flex:none}
+
+.answer-option.selected {background:#fff2dc;border:1.5px solid var(--gold-dark)}
+
+.answer-option.selected:before {content:"✓";display:grid;place-items:center;background:var(--gold-dark);border-color:var(--gold-dark);color:white;font-size:13px}
+
+.gold-page-hero {background:#c8932b;color:white;padding:35px 6.5% 25px}
+
+.gold-page-hero .eyebrow {color:#fff4dc}
+
+.gold-page-hero h1 {font-size:clamp(38px,5vw,62px);font-weight:400;margin:18px 0}
+
+.gold-page-hero p {font-size:16px;margin:0;line-height:1.5}
+
+@media (max-width:1000px) {
+.site-header {padding:0 3%;gap:12px}
+.brand {min-width:0;max-width:210px}
+.main-nav {gap:12px}
+.main-nav a {font-size:11px}
+.header-actions {gap:10px}
+}
+
+@media (max-width:720px) {
+.site-header {height:76px;padding:0 5%}
+.brand img {width:48px;height:48px}
+.brand-name {font-size:15px}
+.brand-name small {font-size:10px}
+.main-nav {display:none;position:absolute;top:76px;left:0;right:0;background:white;padding:15px 6%;box-shadow:var(--shadow);flex-direction:column;align-items:flex-start}
+.main-nav.open {display:flex}
+.main-nav a {font-size:14px}
+.header-actions .login-link,
+.header-actions>.btn {display:none}
+.mobile-toggle {display:block}
+.hero-buttons {flex-wrap:wrap}
+.answer-option {font-size:13px;padding:14px}
+.gold-page-hero {padding:30px 6%}
+.gold-page-hero h1 {font-size:39px}
+.site-footer {padding:22px 6%;gap:20px;align-items:flex-start;flex-direction:column}
+.site-footer>span {font-size:11px}
+}
+
+
+/* Ícone compartilhado das telas de acesso e do quiz */
+.key-icon {width:55px;height:55px;border-radius:20px;background:#f8efd9;color:var(--gold-dark);display:grid;place-items:center;font-size:25px}

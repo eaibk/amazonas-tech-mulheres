@@ -1,0 +1,59 @@
+/* Estilos da página: login */
+.auth-page {min-height:calc(100vh - 218px);padding:45px 7%;display:grid;grid-template-columns:1.15fr .85fr;gap:5%;align-items:center;background:radial-gradient(ellipse at 50% 50%,#dce7d8 0,transparent 45%),var(--cream)}
+
+.auth-art {border-radius:28px;padding:50px;min-height:550px;display:flex;flex-direction:column;justify-content:center;box-shadow:var(--shadow)}
+
+.dark-art {background:var(--green);color:white}
+
+.auth-art h1 {font-size:40px;font-weight:400;line-height:1.2;margin:0 0 25px}
+
+.auth-art p {font-size:16px;line-height:1.6;max-width:570px}
+
+.auth-art ul {padding:0;list-style:none;margin:25px 0 30px}
+
+.auth-art li {margin:18px 0;font-size:14px}
+
+.auth-art li:before {content:"✓";margin-right:14px}
+
+.auth-art>small {font-size:12px}
+
+.auth-form {background:#fff;border:1px solid var(--line);border-radius:22px;padding:32px;box-shadow:var(--shadow)}
+
+.auth-form h2 {font-size:42px;font-weight:400;margin:20px 0 8px}
+
+.auth-form>p {color:var(--muted);line-height:1.6;margin:0 0 22px}
+
+.auth-form label {display:block;font-size:13px;font-weight:700;margin:17px 0 8px}
+
+.auth-form input {width:100%;border:1px solid var(--line);border-radius:12px;padding:15px 13px;outline:none;color:var(--text)}
+
+.auth-form input:focus {border-color:var(--sage);box-shadow:0 0 0 3px #819b7020}
+
+.password-wrap {position:relative}
+
+.password-wrap input {padding-right:48px}
+
+.show-password {position:absolute;right:9px;top:7px;border:0;background:transparent;padding:8px;color:var(--muted);cursor:pointer}
+
+.field-help {display:block;color:var(--muted);font-size:10px;margin-top:7px}
+
+.form-message {font-size:12px;color:#a43c2c;min-height:16px}
+
+.form-switch {text-align:center;color:var(--muted);font-size:12px;margin-top:22px}
+
+.form-switch .btn {margin-top:12px}
+
+@media (max-width:1000px) {
+.auth-page {padding:35px 4%;gap:3%}
+.auth-art {padding:35px}
+}
+
+@media (max-width:720px) {
+.auth-page {grid-template-columns:1fr;padding:25px 5%;gap:20px}
+.auth-art {min-height:330px;padding:28px}
+.auth-art h1 {font-size:31px}
+.auth-form {padding:25px}
+.auth-form h2 {font-size:34px}
+}
+
+.auth-art .key-icon {margin-bottom:35px}

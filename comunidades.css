@@ -1,0 +1,78 @@
+/* Estilos da página: comunidades */
+.communities-page {padding:45px 6.5% 60px}
+
+.communities-page h1 {font-size:54px;font-weight:400;margin:20px 0 8px}
+
+.communities-page h1 strong {color:var(--gold-dark)}
+
+.lead {font-size:15px;color:var(--muted)}
+
+.search-box {margin:42px 0 20px;background:var(--gold);border-radius:10px;padding:16px 24px;width:min(505px,100%)}
+
+.search-box label {display:block;font-weight:700;font-size:13px;margin-bottom:8px}
+
+.search-box input {border:0;border-radius:11px;background:white;padding:15px;width:100%;outline:none}
+
+.filters {display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}
+
+.filter {background:#fff;border:1px solid var(--line);border-radius:25px;padding:12px 18px;color:var(--muted);cursor:pointer;font-size:12px}
+
+.filter.active {background:var(--green);color:white;border-color:var(--green)}
+
+.community-grid {display:grid;grid-template-columns:1fr 1fr;gap:22px}
+
+.community-card {display:grid;grid-template-columns:1.2fr .8fr;background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);min-height:250px}
+
+.community-info {padding:22px;display:flex;flex-direction:column}
+
+.community-icon {background:var(--gold);color:var(--green);width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:18px}
+
+.community-info h2 {font-size:22px;margin:18px 0 6px}
+
+.community-info>p {font-size:12px;line-height:1.6;color:var(--muted);margin:0 0 15px}
+
+.community-card img {width:100%;height:100%;object-fit:cover}
+
+.community-bottom {display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}
+
+.community-bottom small {font-size:10px;color:var(--muted)}
+
+.community-bottom .btn {padding:11px}
+
+@media (max-width:1000px) {
+.community-card {grid-template-columns:1fr}
+.community-card img {height:170px;grid-row:1}
+.community-info {grid-row:2}
+}
+
+@media (max-width:720px) {
+.communities-page {padding:35px 6%}
+.communities-page h1 {font-size:38px}
+.community-grid {grid-template-columns:1fr}
+.community-card {grid-template-columns:1fr 42%}
+.community-card img {grid-row:auto;height:100%;min-height:230px}
+.community-info {grid-row:auto;padding:16px}
+.community-info h2 {font-size:19px}
+.community-bottom {align-items:flex-start;flex-direction:column}
+}
+
+.community-join.is-joined{background:#e8f0e4;border-color:#b8cba8;color:#28533d}
+
+.community-card img.image-fallback{background:#e9edda url("../assets/folhas.svg") center/cover no-repeat}
+
+/* Cards de comunidades verificadas: texto e identidade, sem fotos genéricas atribuídas aos grupos */
+.community-card {grid-template-columns:1fr;min-height:0}
+.community-info {padding:26px;min-width:0}
+.community-type {display:block;margin-top:14px;color:var(--muted);font-size:11px;line-height:1.4}
+.community-info h2 {margin:8px 0}
+.community-bottom {flex-wrap:wrap}
+.community-source-note {margin:26px 0 0;color:var(--muted);font-size:12px;line-height:1.6}
+@media (max-width:720px) {
+ .community-card {grid-template-columns:1fr}
+ .community-info {padding:21px}
+ .community-bottom {align-items:center;flex-direction:row}
+ .community-bottom .btn {white-space:nowrap}
+ .communities-page h1 {font-size:clamp(32px,9vw,42px);line-height:1.1}
+ .filters {gap:7px}
+ .filter {padding:10px 13px}
+}
