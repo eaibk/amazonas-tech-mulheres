@@ -58,7 +58,7 @@
 
 .community-join.is-joined{background:#e8f0e4;border-color:#b8cba8;color:#28533d}
 
-.community-card img.image-fallback{background:#e9edda url("../assets/folhas.svg") center/cover no-repeat}
+.community-card img.image-fallback{background:#e9edda url("folhas.svg") center/cover no-repeat}
 
 /* Cards de comunidades verificadas: texto e identidade, sem fotos genéricas atribuídas aos grupos */
 .community-card {grid-template-columns:1fr;min-height:0}

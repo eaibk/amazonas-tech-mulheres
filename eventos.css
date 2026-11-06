@@ -19,7 +19,7 @@
 
 .event-card .event-date{margin-top:0}
 
-.community-card img.image-fallback{object-fit:contain;background:#e9edda url("../assets/folhas.svg") center/cover no-repeat;min-height:150px}
+.community-card img.image-fallback{object-fit:contain;background:#e9edda url("folhas.svg") center/cover no-repeat;min-height:150px}
 
 .events-source-note {margin:0 0 22px;color:var(--muted);font-size:12px;line-height:1.6}
 .event-card {min-width:0}
